@@ -11,3 +11,6 @@ apt update
 
 #Actualizamos los paquetes
 apt upgrade -y
+
+# Instalamos nginx
+apt install nginx -y
