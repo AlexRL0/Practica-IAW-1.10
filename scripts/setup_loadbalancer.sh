@@ -7,7 +7,7 @@ set -ex
 source .env
 
 #Actualizamos los repositorios
-#apt update
+apt update
 
 #Actualizamos los paquetes
 apt upgrade -y
