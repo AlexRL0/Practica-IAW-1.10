@@ -14,3 +14,13 @@ apt upgrade -y
 
 # Instalamos nginx
 apt install nginx -y
+
+# Deshabilitamos el enlace simbólico
+unlink /etc/nginx/sites-enabled/default
+
+# 
+cp ../conf/load_balancer.conf /etc/nginx/sites-available
+
+#
+sed -i "s/IP_FRONTEND_1/$IP_FRONTEND_1/" /etc/nginx/sites-available
+sed -i "s/IP_FRONTEND_2/$IP_FRONTEND_2/" /etc/nginx/sites-available
