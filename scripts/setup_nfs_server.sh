@@ -9,11 +9,11 @@ source .env
 # Instalamos el servidor NFS
 apt install nfs-kernel-server -y
 
-# Modificamos el grupo y el propietario del directorio
-chown nobody:group /var/www/html
-
 # hacemos el directorio
 mkdir -p /var/www/html
+
+# Modificamos el grupo y el propietario del directorio
+chown nobody:nogroup /var/www/html
 
 # copiamos la plantilla exports a /etc/exports
 cp ../nfs/exports /etc/exports
