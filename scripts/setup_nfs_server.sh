@@ -10,7 +10,7 @@ source .env
 apt install nfs-kernel-server -y
 
 # Modificamos el grupo y el propietario del directorio
-chmod nobody:group /var/www/html
+chown nobody:group /var/www/html
 
 # hacemos el directorio
 mkdir -p /var/www/html
