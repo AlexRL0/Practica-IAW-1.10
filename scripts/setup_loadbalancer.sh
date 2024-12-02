@@ -32,3 +32,4 @@ fi
 
 # Reiniciamos nginx
 systemctl reload nginx
+
