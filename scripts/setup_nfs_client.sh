@@ -5,3 +5,14 @@ set -ex
 
 # Importamos el archivo .env
 source .env
+
+#Actualizamos los repositorios
+apt update
+
+#Actualizamos los paquetes
+apt upgrade -y
+
+# Instalamos el cliente NFS
+sudo apt install nfs-common -y
+
+mount 
