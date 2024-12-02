@@ -20,4 +20,4 @@ snap install --classic certbot
 ln -fs /snap/bin/certbot /usr/bin/certbot
 
 #Solicitamos un certificado a Let's Encrypt
-certbot --apache -m $LE_EMAIL --agree-tos --no-eff-email -d $LE_DOMAIN --non-interactive
+certbot --nginx -m $LE_EMAIL --agree-tos --no-eff-email -d $LE_DOMAIN --non-interactive
