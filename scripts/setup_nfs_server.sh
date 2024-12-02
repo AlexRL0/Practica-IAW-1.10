@@ -5,3 +5,21 @@ set -ex
 
 # Importamos el archivo .env
 source .env
+
+# Instalamos el servidor NFS
+apt install nfs-kernel-server -y
+
+# Modificamos el grupo y el propietario del directorio
+chmod nobody:group /var/www/html
+
+# hacemos el directorio
+mkdir -p /var/www/html
+
+# copiamos la plantilla exports a /etc/exports
+cp ../nfs/exports /etc/exports
+
+# Reemplazamos el valor de la plantilla de /etc/exports
+sed -i "s#FRONTEND_NETWORK#$FRONTEND_NETWORK#" /etc/exports
+
+# Reiniciamos el servicio de NFS
+systemctl restart nfs-kernel-server
