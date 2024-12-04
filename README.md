@@ -17,11 +17,11 @@
 
 Para crear el nombre de dominio en la página, tenemos que registrarnos y dirigirnos al sitio que muestra la captura y darle a **crear nombre de host**.
 
-![](imagenes/no-ip-1.9.png)
+![](imagenes/no-ip-1.10.png)
 
 Una vez dado al recuadro de crear el nombre, nos sale un asistente para poner el nombre de host que queramos, el dominio que queremos que lleve, la dirección ip de la máquina o pc que queremos que tenga ese nombre de host y el tipo de registro que queremos que lleve, en nuestro caso es el **DNS Host A**
 
-![](imagenes/no-ip2-1.9.png)
+![](imagenes/no-ip2-1.10.png)
 
 Hecho esto ya podemos automatizar el proceso de la arquitectura de una aplicación web LAMP en dos niveles
 
