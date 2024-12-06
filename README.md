@@ -123,10 +123,6 @@ systemctl reload nginx
 
 ## Comprobación de que el balanceador de carga funciona
 
-![](imagenes/WordPress1-1.9.png)
+![](imagenes/balanceador.png)
 
-![](imagenes/WordPress2-1.9.png)
-
-![](imagenes/WordPress3-1.9.png)
-
-![](imagenes/WordPress4-1.9.png)
+![](imagenes/balanceador2.png)
